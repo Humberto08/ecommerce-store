@@ -33,6 +33,11 @@ const ProductPage: React.FC<ProductPageProps> = async ({
             <Gallery images={product.images} />
             <div className="mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-0">
               <Info data={product} />
+              <hr className="my-10" />
+              <div>
+                <h2 className="font-semibold text-black">Description of product</h2>
+                <p className="mt-4 text-gray-600">{product.description}</p>
+              </div>
             </div>
           </div>
           <hr className="my-10" />

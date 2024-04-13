@@ -1,4 +1,4 @@
-import ProductCard from "@/components/ui/product-card";
+import ProductCardFeat from "@/components/ui/product-card-feat";
 import NoResults from "@/components/ui/no-results";
 import { Product } from "@/types";
 
@@ -14,7 +14,7 @@ const ProductList: React.FC<ProductListProps> = ({ title, items }) => {
       {items.length === 0 && <NoResults />}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {items.map((item) => (
-          <ProductCard key={item.id} data={item} />
+          <ProductCardFeat key={item.id} data={item} />
         ))}
       </div>
     </div>
