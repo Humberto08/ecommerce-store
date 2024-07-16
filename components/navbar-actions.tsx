@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import Button from "@/components/ui/button";
 import useCart from "@/hooks/use-cart";
 
+
 const NavbarActions = () => {
   const [isMounted, setIsMounted] = useState(false);
 

@@ -10,11 +10,11 @@ import usePreviewModal from "@/hooks/use-preview-modal";
 import useCart from "@/hooks/use-cart";
 import { Product } from "@/types";
 
-interface ProductCardFeat {
+interface ProductCardCateg {
   data: Product
 }
 
-const ProductCardFeat: React.FC<ProductCardFeat> = ({
+const ProductCardCateg: React.FC<ProductCardCateg> = ({
   data
 }) => {
   const previewModal = usePreviewModal();
@@ -74,4 +74,4 @@ const ProductCardFeat: React.FC<ProductCardFeat> = ({
   );
 }
 
-export default ProductCardFeat;
+export default ProductCardCateg;

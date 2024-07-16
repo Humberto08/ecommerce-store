@@ -1,16 +1,16 @@
 
 import Container from '@/components/ui/container';
 import Billboard from '@/components/ui/billboard';
-import ProductCard from '@/components/ui/product-card';
+import ProductCardCateg from '@/components/ui/product-card-categ';
 import NoResults from '@/components/ui/no-results';
-
 import getProducts from "@/actions/get-products";
 import getCategory from '@/actions/get-category';
 import getSizes from '@/actions/get-sizes';
 import getColors from '@/actions/get-colors';
-
 import Filter from './components/filter';
 import MobileFilters from './components/mobile-filters';
+
+
 
 export const revalidate = 0;
 
@@ -62,7 +62,8 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({
               {products.length === 0 && <NoResults />}
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {products.map((item) => (
-                  <ProductCard key={item.id} data={item} />
+                  <ProductCardCateg key={item.id} data={item} />
+                  
                 ))}
               </div>
             </div>
